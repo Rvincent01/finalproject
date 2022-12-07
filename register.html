@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<link rel="stylesheet" href="style.css">
+
+<style>html{background:grey}</style>
+<script>
+
+function first()
+
+{
+
+var firstname = document.getElementById("fname");
+
+
+
+if (firstname.value == "" )
+{
+
+alert("enter your first name");
+
+}
+
+}
+
+
+function last()
+
+{
+
+var lastname = document.getElementById("lname");
+
+
+if (lastname.value == "" )
+{
+
+alert("enter your last name");
+
+}
+}
+
+
+function electronic()
+
+{
+
+var electronicmail = document.getElementById("email");
+
+
+if (email.value == "" )
+{
+
+alert("enter your email");
+
+}
+}
+
+function telenumber()
+
+{
+
+var electronicmail = document.getElementById("tel");
+
+
+if (tel.value == "" )
+{
+
+alert("enter your phone number");
+
+}
+}
+
+</script>
+
+
+</head>
+<body>
+  
+
+<header>
+<a href="#" class="logo"><span>Blink</span>Fitness</a>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="membership.html">Membership</a>
+  <a href="register.html">Sign Up</a>
+  
+ 
+ 
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</header>
+
+<section class="register" id="register">
+<h1 class="heading">Sign Up Today</h1>
+
+<form >
+
+<div class="inputBox">
+
+<input id="fname" type="text" placeholder="first name">
+<input id="lname" type="text" placeholder="last name">
+<input id="email" type="email" placeholder="your email">
+<input id="tel" type="number" placeholder="your number">
+
+</div>
+
+
+
+<textarea   cols="30" rows="10" placeholder="Additional Comments"></textarea>
+
+<input type="submit" onclick="first();last();electronic();telenumber();" class="btn" value="register">
+
+</form>
+</section>
+
+
+
+
+</body>
+</html>
+
+
