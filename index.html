@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html  lang="zxx">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<a href="#" class="logo"><span>Blink</span>Fitness</a>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="membership.html">Membership</a>
+  <a href="register.html">Sign Up</a>
+  
+ 
+
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</header>
+
+
+<section class="home" id="home">
+<h1>“Success usually comes to those who are 
+too busy to be looking for it.”</h1>
+<button class="btn">get started</button>
+</section>
+
+<section class="about" id="about">
+<div class="row">
+<div class="image">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="sq.jpg" alt = "Man squatting" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="g.jpg" alt = "empty gym" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="tr.jpg" alt = "treadmills" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" act", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " act";
+}
+</script></div>
+<div class="content">
+<h3> about us</h3>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, illo saepe! Magnam, unde explicabo amet perferendis voluptate distinctio facilis quae ipsa quas! Officiis veritatis aut est vero id, debitis pariatur?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, soluta laboriosam. Laborum aspernatur laboriosam deserunt cupiditate laudantium illum commodi. Vero.</p>
+<button class="btn">Info</button>
+
+
+</div>
+</div>
+</section>
+
+
+
+<section class="service" id="service">
+<h1 class="heading">Amenities</h1>
+
+
+
+
+
+
+<div class="box-container">
+
+<div class="box">
+<img src="w.jpg" alt="">
+<div class="info">
+<h3>weight Training</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+<button class="btn">Info</button>
+
+
+
+
+
+
+</div>
+</div>
+
+
+<div class="box">
+<img src="b.jpg" alt="">
+<div class="info">
+<h3>boxing</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+<button class="btn">Info</button>
+
+
+
+
+</div>
+</div>
+
+
+<div class="box">
+<img src="tt.jpg" alt="">
+<div class="info">
+<h3>trainer</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+<button class="btn">Info</button>
+
+
+</div>
+</div>
+
+<div class="box">
+<img src="y.jpg" alt="">
+<div class="info">
+<h3>Pilates</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+<button class="btn">Info</button>
+</div>
+</div>
+
+
+<div class="box">
+<img src="t.jpg" alt="">
+<div class="info">
+<h3>Cardio</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus a distinctio excepturi libero eveniet amet id vel minima officiis doloribus.</p>
+<button class="btn">Info</button>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+</body>
+</html>
